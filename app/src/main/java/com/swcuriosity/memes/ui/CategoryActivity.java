@@ -87,23 +87,7 @@ public class CategoryActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_images);
         Fabric.with(this, new Crashlytics());
-/*        Crashlytics.log("Start logging!");
-
-        Crashlytics.setUserIdentifier("id-99999");
-        Crashlytics.setUserName("FirebaseThailand");
-        Crashlytics.setUserEmail("firebasethailand@gmail.com");
-
-        Crashlytics.setString("key1", "value1");
-        Crashlytics.setBool("key2", true);
-        Crashlytics.setDouble("key3", 99.99);
-        Crashlytics.setFloat("key4", 999.99f);
-        Crashlytics.setInt("key5", 999);
-        Crashlytics.setLong("key6", System.currentTimeMillis());
-
-        Crashlytics.log(Log.DEBUG, "ggg", "Log some message before a crash happen");
-        Crashlytics.getInstance().crash();
-  */
-ButterKnife.bind(this);
+        ButterKnife.bind(this);
 
         NotificationManager notificationManager = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
 //                    notificationManager.cancel(NOTIFICATION_ID);
@@ -126,18 +110,7 @@ ButterKnife.bind(this);
 
         // Setting RecyclerView layout as LinearLayout.
         recyclerView.setLayoutManager(new LinearLayoutManager(CategoryActivity.this));
-//        list = GlobalMethods.geCategoryListList(CategoryActivity.this);
-//        if (list != null) {
-//            setCategoryAdapter();
-//            if(list.size()>0){
-//                DialogManager.hidePkrogress();
-//            }
-//        } else {
-//
-//                list = new ArrayList<>();
-//
-//
-//        }
+
 
         // Assign activity this to progress dialog.
         progressDialog = new ProgressDialog(CategoryActivity.this);
@@ -179,75 +152,14 @@ ButterKnife.bind(this);
             Query query = databaseReference1.orderByChild("priority");
 
             FirebaseApiCall.getInstance().requestData(query, this);
-//            Query query=databaseReference.orderByChild("IsActive").equalTo ("1");
-            // Adding Add Value Event Listener to databaseReference.
-//        query.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot snapshot) {
-//                list.clear();
-//                mMapCategoryList = (HashMap<String,ImageUploadInfo>) snapshot.getValue();
-//                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-////                    HashMap<String, Object> td = (HashMap<String,ImageUploadInfo>) snapshot.getValue(ImageUploadInfo.class);
-////
-//                     ImageUploadInfo imageUploadInfo = postSnapshot.getValue(ImageUploadInfo.class);
 //
-//                String str=    postSnapshot.getKey();
-//                    imageUploadInfo.setId(str);
-//                    list.add(imageUploadInfo);
-////                                        databaseReference1.child(str).setValue(imageUploadInfo);
-//
-////                    Collections.reverse(list);
-//                }
-//                GlobalMethods.storeValuetoPreference(CategoryActivity.this,GlobalMethods.ARRAY_LIST_PREFERENCE,AppConstants.CATEGORY_LIST,list);
-////
-////                adapter = new CategoryAdapter(getApplicationContext(), list);
-//                adapter.notifyDataSetChanged();
-////                GridLayoutManager  m_gridLayManager = new GridLayoutManager(CategoryActivity.this, 2);
-//
-////                m_gridLayManager.setReverseLayout(true);
-//
-////                recyclerView.setLayoutManager(m_gridLayManager);
-////                recyclerView.setHasFixedSize(true);
-////                recyclerView.setAdapter(adapter);
-//
-//                // Hiding the progress dialog.
-//                DialogManager.hideProgress();            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//
-//                // Hiding the progress dialog.
-//                DialogManager.hideProgress();
-//
-//            }
-//        });
         } else {
-            DialogManager.showToast(this,getResources().getString(R.string.no_internet));
+            DialogManager.showToast(this, getResources().getString(R.string.no_internet));
 
-//            list = GlobalMethods.geCategoryListList(CategoryActivity.this);
-//            if (list != null && list.size() > 0) {
-//
-//
-//            adapter = new CategoryAdapter(getApplicationContext(), list);
-//            GridLayoutManager m_gridLayManager = new GridLayoutManager(CategoryActivity.this, 2);
-//
-////                m_gridLayManager.setReverseLayout(true);
-//
-//            recyclerView.setLayoutManager(m_gridLayManager);
-//            recyclerView.setHasFixedSize(true);
-//            recyclerView.setAdapter(adapter);
+
             DialogManager.hideProgress();
             // Hiding the progress dialog.
-//            DialogManager.showToast(this,getResources().getString(R.string.no_internet));
-//            progressDialog.dismiss();
-//                DialogManager.showToast(this,getResources().getString(R.string.no_internet));
-            //          }
-
-//            FirebaseDatabase database = FirebaseDatabase.getInstance();
-//            database.setPersistenceEnabled(true);
-//            database.goOffline();
-//            databaseReference = FirebaseDatabase.getInstance().getReference(Database_Path);
+//
             databaseReference1 = FirebaseDatabase.getInstance().getReference(Database_Path1);
             Query query = databaseReference1.orderByChild("priority");
 

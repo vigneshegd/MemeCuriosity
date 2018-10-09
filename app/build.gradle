@@ -4,10 +4,10 @@ apply plugin: 'io.fabric'
 android {
     signingConfigs {
         config {
-            keyAlias 'Memes'
-            keyPassword 'meme2139'
-//            storeFile file('H:/Project/signin/memeskey.jks')
+            keyAlias 'memescuriosity'
+            keyPassword 'memes2139'
             storePassword 'meme2139'
+            storeFile file('D:/android/Project_folder/MemeCuriosity/MemeCuriosity/app/memescuriosity.jks')
         }
     }
     compileSdkVersion 27
@@ -16,8 +16,8 @@ android {
         applicationId "com.swcuriosity.memes"
         minSdkVersion 17
         targetSdkVersion 27
-        versionCode 17
-        versionName "1.0.4"
+        versionCode 1
+        versionName "1.0"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.config
@@ -59,7 +59,7 @@ dependencies {
     compile 'com.google.firebase:firebase-database:11.8.0'
     compile 'com.google.firebase:firebase-core:11.8.0'
     compile 'com.firebase:firebase-client-android:2.4.0'
-//    compile 'com.crashlytics.sdk.android:crashlytics:2.9.3'
+    //    compile 'com.crashlytics.sdk.android:crashlytics:2.9.3'
     compile('com.crashlytics.sdk.android:crashlytics:2.9.3@aar') {
         transitive = true
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -79,7 +79,6 @@ dependencies {
     //    compile 'com.google.android.gms:play-services-ads:11.8.0'
     compile project(':photoeditorsdk')
     compile 'com.google.firebase:firebase-crash:11.8.0'
-
     compile 'com.android.support:design:27.0.0'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'fr.avianey.com.viewpagerindicator:library:2.4.1@aar'

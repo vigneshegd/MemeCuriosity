@@ -1,0 +1,192 @@
+{
+  "project_info": {
+    "project_number": "251386116645",
+    "firebase_url": "https://memes-curiosity-1abbf.firebaseio.com",
+    "project_id": "memes-curiosity-1abbf",
+    "storage_bucket": "memes-curiosity-1abbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251386116645:android:48faf4e8dbce50f8",
+        "android_client_info": {
+          "package_name": "com.software.curiosity.memeadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251386116645-6n2upqkeikmpj26vofak530gj41phsnb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.software.curiosity.memeadmin",
+            "certificate_hash": "20afc7375fb139240501b80aeba63c52014fceec"
+          }
+        },
+        {
+          "client_id": "251386116645-3lmslg9ggs8vh5ap3dn9h1l5m20l9956.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.software.curiosity.memeadmin",
+            "certificate_hash": "6c016023d92b1d2ded22c3b02d13c88471d77e5d"
+          }
+        },
+        {
+          "client_id": "251386116645-0r0mc8pt7r0qggtne4jcumh1c39tnjsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQa_Y6EtcnCzNG96XM0_r3Ts-YxuWZAGE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251386116645-0r0mc8pt7r0qggtne4jcumh1c39tnjsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251386116645:android:d767140d150aeb17",
+        "android_client_info": {
+          "package_name": "com.swcuriosity.memes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251386116645-4d79mim8vmh7u725l0tgj7u8igdv41u3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swcuriosity.memes",
+            "certificate_hash": "20afc7375fb139240501b80aeba63c52014fceec"
+          }
+        },
+        {
+          "client_id": "251386116645-fqatghe1bafeb2konc1leuj9b6afagh9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swcuriosity.memes",
+            "certificate_hash": "6c016023d92b1d2ded22c3b02d13c88471d77e5d"
+          }
+        },
+        {
+          "client_id": "251386116645-jrumqaml39k0pfq03kf18068g5min53m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swcuriosity.memes",
+            "certificate_hash": "05a790b011e27c2ad5a4995bd7be532364a5d2c5"
+          }
+        },
+        {
+          "client_id": "251386116645-j3hvovfa0a29ql4d51fu92nkebinrd95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swcuriosity.memes",
+            "certificate_hash": "c4bcd631131424ca4218ec499fddf5f3fbabc1ed"
+          }
+        },
+        {
+          "client_id": "251386116645-0r0mc8pt7r0qggtne4jcumh1c39tnjsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQa_Y6EtcnCzNG96XM0_r3Ts-YxuWZAGE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251386116645-0r0mc8pt7r0qggtne4jcumh1c39tnjsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251386116645:android:620fd7f13ae8373c",
+        "android_client_info": {
+          "package_name": "com.swcuriosity.memescuriosity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251386116645-7q9a34qksm8oaqtt2u1tknn98abesv8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swcuriosity.memescuriosity",
+            "certificate_hash": "6c016023d92b1d2ded22c3b02d13c88471d77e5d"
+          }
+        },
+        {
+          "client_id": "251386116645-f3q08nl55spr7u4l32lv67tcoao00idi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swcuriosity.memescuriosity",
+            "certificate_hash": "20afc7375fb139240501b80aeba63c52014fceec"
+          }
+        },
+        {
+          "client_id": "251386116645-g6soklqvpblqrdoel6edl1ku45mdggv2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swcuriosity.memescuriosity",
+            "certificate_hash": "05a790b011e27c2ad5a4995bd7be532364a5d2c5"
+          }
+        },
+        {
+          "client_id": "251386116645-0r0mc8pt7r0qggtne4jcumh1c39tnjsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQa_Y6EtcnCzNG96XM0_r3Ts-YxuWZAGE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251386116645-0r0mc8pt7r0qggtne4jcumh1c39tnjsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-8839157502541520~1899681249"
+    }
+  ],
+  "configuration_version": "1"
+}

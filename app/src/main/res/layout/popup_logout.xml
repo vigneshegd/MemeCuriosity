@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_view_for_font"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size130"
+        android:layout_margin="@dimen/size9"
+        android:gravity="center"
+        android:background="@drawable/btn_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size25"
+            android:padding="@dimen/size10"
+            android:gravity="center"
+            android:textColor="@color/app_color"
+            android:textSize="@dimen/size12"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yes_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size30"
+                android:layout_margin="@dimen/size5"
+                android:layout_weight="0.32"
+                android:background="@drawable/btn_background_black"
+                android:padding="@dimen/size5"
+                android:text="@string/button_yes"
+                android:textAllCaps="true"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text12" />
+
+            <Button
+                android:id="@+id/no_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size30"
+                android:layout_margin="@dimen/size5"
+                android:layout_weight="0.32"
+                android:textAllCaps="true"
+                android:background="@drawable/btn_background_black"
+                android:padding="@dimen/size5"
+
+                android:text="@string/button_no"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close_img"
+        android:layout_width="@dimen/size30"
+        android:layout_height="@dimen/size30"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/size5"
+
+        />
+</RelativeLayout>

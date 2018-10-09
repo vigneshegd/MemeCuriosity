@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Memes Curiosity</string>
+
+
+    <!--internet connection-->
+    <string name="connect_time_out">Connection to Moos App Server Timeout, Please try again</string>
+    <string name="no_internet"> Please verify your internet connection</string>
+    <string name="please_wait"> Please wait</string>
+
+
+    <string name="ok">OK</string>
+    <string name="loading">Loading…</string>
+    <string name="image_saved"> Image saved</string>
+    <!-- Splash permission-->
+    <string name="camera_cal">Camera Permission required for this app</string>
+    <string name="storage_cal">Storage Permission required for this app</string>
+
+    <string name="camera_storage_location_cal">Camera and Storage Permission required for this app</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="go_to_settings_and_enable_permissions">Go to settings and enable permissions</string>
+
+    <!-- design selection screen-->
+
+
+    <string name="select_your_design">Select your Design</string>
+    <string name="design_screen">Memes Editor</string>
+
+    <!-- Strings related to Logout-->
+    <string name="are_you_sure_want_to_discard">Are you sure you want to discard?</string>
+    <string name="are_you_sure_want_to_exit">Are you sure you want to Exit?</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="camera">Take Photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="imagetitle">Pick A Image From</string>
+
+    <!--fb app id -->
+    <string name="facebook_app_id">1656173841062933</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="title_activity_photo_editor">PhotoEditorActivity</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+    <string name="clear_all">Clear All</string>
+    <!--<string name="camera">Camera</string>-->
+    <!--<string name="gallery">Gallery</string>-->
+    <string name="upload_dialog_title">Upload Image</string>
+    <string name="upload_picker_title">Select Picture</string>
+    <string name="directory_create_fail">Failed to create directory</string>
+    <string name="access_media_permissions_msg">To attach photos, we need to access media on your device</string>
+    <string name="continue_txt">Continue</string>
+    <string name="not_now">NOT NOW</string>
+    <string name="media_access_denied_msg">You denied storage access, no photos will be added.</string>
+
+    <string name="ic_close">"\ue918"</string>
+    <string name="ic_text">"\ue945"</string>
+    <string name="ic_draw">""\ue944</string>
+    <string name="ic_images">"\ue949"</string>
+    <string name="ic_save">"\ue946"</string>
+    <string name="ic_clear_all">"\ue947"</string>
+    <string name="ic_continue">"\ue948"</string>
+    <string name="ic_delete">"\ue92c"</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="choose_from_camera">Choose From Camera</string>
+    <string name="undo">Undo</string>
+    <string name="erase">Erase</string>
+
+
+
+
+
+
+
+
+    <!--Motion view -->
+    <string name="add_sticker">Add Sticker</string>
+    <string name="add_text">Add Text</string>
+
+    <string name="select_color">Select color</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="select_font">Select font</string>
+
+
+    <string name="title_activity_second_activiy">Interstitial</string>
+    <string name="msg_welcome">Welcome to Admob. Click on the below button to launch the Interstitial ad.</string>
+    <string name="btn_fullscreen_ad">Show Fullscreen Ad</string>
+
+    <!-- AdMob ad unit IDs -->
+    <!--<string name="banner_home_footer">ca-app-pub-3729300065848492/9253595848</string>-->
+    <string name="interstitial_full_screen">ca-app-pub-5087786494293031/3831959412</string>
+
+    <!--<string name="admob_appid">ca-app-pub-5087786494293031~8845554897</string>-->
+    <!--<string name="banner_home_footer">ca-app-pub-2358513506513485/5692525632</string>-->
+
+
+    <!-- AdMob ad unit IDs -->
+
+    <string name="admob_appid">ca-app-pub-5087786494293031~8845554897</string>
+    <string name="banner_home_footer">ca-app-pub-5087786494293031/8013768348</string>
+    <!--<string name="interstitial_full_screen">ca-app-pub-3729300065848492/8964099038</string>-->
+<!---->
+<!---->
+    <!--<string name="admob_appid">ca-app-pub-2358513506513485~2171959318</string>-->
+    <string name="banner_home_footer1">ca-app-pub-2358513506513485/56925256321</string>
+    <!--<string name="interstitial_full_screen">ca-app-pub-3729300065848492/8964099038</string>-->
+
+    <!-- Category screen -->
+    <string name="meme_templates">Memes Templates</string>
+    <string name="templates">- Templates</string>
+    <!--popup menu view -->
+    <string name="add_logo">Add Logo/Image</string>
+    <string name="remove">Remove Photo</string>
+    <string name="top_text">Top</string>
+    <string name="bottom">Bottom</string>
+</resources>

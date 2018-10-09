@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size8"
+    android:layout_margin="@dimen/size14"
+    android:background="@drawable/btn_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        style="@style/TextRegular"
+        android:padding="@dimen/size8"
+        android:layout_margin="@dimen/size4"
+        android:textSize="@dimen/text14"
+        android:textColor="@color/color_white"
+        android:id="@+id/title_text"/>
+
+   <TextView
+       android:id="@+id/yes_txt"
+       android:padding="@dimen/size5"
+       android:layout_below="@+id/title_text"
+       android:textColor="@color/color_white"
+       android:layout_marginRight="@dimen/size11"
+       style="@style/TextBold"
+       android:layout_marginLeft="@dimen/size8"
+       android:layout_marginTop="@dimen/size8"
+       android:layout_marginBottom="@dimen/size8"
+       android:background="@drawable/ripple_effect_android_white"
+       android:text="@string/button_yes"
+       android:textSize="@dimen/text14"
+       android:layout_alignParentRight="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/no_txt"
+        android:padding="@dimen/size5"
+        style="@style/TextBold"
+        android:layout_below="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/size8"
+        android:textColor="@color/color_white"
+        android:text="@string/button_no"
+        android:background="@drawable/ripple_effect_android_white"
+        android:textSize="@dimen/text14"
+        android:layout_toLeftOf="@+id/yes_txt"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</LinearLayout>

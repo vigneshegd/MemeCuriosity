@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:androclass="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/take_photo"
+        android:title="@string/camera"
+        style="@style/TextRegular"
+
+        />
+
+    <item
+        android:id="@+id/gallery"
+        style="@style/TextRegular"
+        android:title="@string/gallery"/>
+
+    <item
+        android:id="@+id/add_logo_menu"
+        style="@style/TextRegular"
+        android:title="@string/add_logo"/>
+
+    <item
+        android:id="@+id/remove_photo"
+        style="@style/TextRegular"
+        android:title="@string/remove"/>
+
+
+</menu>

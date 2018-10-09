@@ -1,0 +1,216 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Base application theme. -->
+    <!--
+         Base application theme, dependent on API level. This theme is replaced
+         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+     -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/yellow_color</item>
+        <item name="colorControlActivated">@color/color_white</item>
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--Add modified themes-->
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:itemTextAppearance">@style/itemTextStyle.AppTheme</item>
+        <!-- Change Overflow Menu ListView Item Height & Property -->
+
+        <item name="android:listPreferredItemPaddingLeft">5dp</item>
+        <item name="android:listPreferredItemPaddingRight">5dp</item>
+
+    </style>
+
+
+    <style name="LayoutMatch" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutMatchWrap" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutWrap" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:cacheColorHint">#ffffff</item>
+
+        <item name="android:color">#ffffff</item>
+    </style>
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="itemTextStyle.AppTheme" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.TextView">
+
+    </style>
+
+    <style name="TextBold" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/OpenSans-Semibold.otf</item>
+    </style>
+
+
+    <!--<style name="TextLight" parent="AppTheme.Widget.TextView">-->
+        <!--<item name="android:textColor">@color/color_white</item>-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:padding">@dimen/size3</item>-->
+        <!--<item name="fontPath">fonts/OpenSans-Light.otf</item>-->
+    <!--</style>-->
+
+    <style name="TextRegular" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/OpenSans-Regular.otf</item>
+    </style>
+
+
+    <style name="TextFullBold" parent="AppTheme.Widget.TextView">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/size3</item>
+        <item name="fontPath">fonts/opensansbold.otf</item>
+    </style>
+
+    <!--<style name="EditBold" parent="android:Widget.EditText">-->
+        <!--<item name="android:textColor">@color/color_white</item>-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:textCursorDrawable">@drawable/white_cursor</item>-->
+        <!--<item name="android:padding">@dimen/size3</item>-->
+        <!--<item name="android:background">@null</item>-->
+        <!--<item name="android:textColorHint">@color/color_white</item>-->
+        <!--<item name="fontPath">fonts/OpenSans-Semibold.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="EditLight" parent="android:Widget.EditText">-->
+        <!--<item name="android:textColor">@color/color_white</item>-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:padding">@dimen/size3</item>-->
+        <!--<item name="android:background">@null</item>-->
+        <!--<item name="android:textCursorDrawable">@drawable/white_cursor</item>-->
+        <!--<item name="android:textColorHint">@color/color_white</item>-->
+
+        <!--<item name="fontPath">fonts/OpenSans-Light.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="EditRegular" parent="android:Widget.EditText">-->
+        <!--<item name="android:textColor">@color/color_white</item>-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:textCursorDrawable">@drawable/white_cursor</item>-->
+        <!--<item name="android:background">@null</item>-->
+        <!--<item name="android:textColorHint">@color/color_white</item>-->
+        <!--<item name="android:padding">@dimen/size3</item>-->
+        <!--<item name="fontPath">fonts/OpenSans-Regular.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="ButtonBold" parent="android:Widget.Button">-->
+        <!--<item name="android:textColor">@color/app_color</item>-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:padding">@dimen/size3</item>-->
+        <!--<item name="fontPath">fonts/OpenSans-Semibold.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="ButtonLight" parent="android:Widget.Button">-->
+        <!--<item name="android:textColor">@color/app_color</item>-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:padding">@dimen/size3</item>-->
+        <!--<item name="fontPath">fonts/OpenSans-Light.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="ButtonRegular" parent="android:Widget.Button">-->
+        <!--<item name="android:textColor">@color/app_color</item>-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:padding">@dimen/size3</item>-->
+        <!--<item name="fontPath">fonts/OpenSans-Regular.otf</item>-->
+    <!--</style>-->
+
+
+
+    <!--<style name="DialogBoxAnimation">-->
+        <!--&lt;!&ndash;<item name="android:windowEnterAnimation">@anim/anim_in_bottom</item>&ndash;&gt;-->
+        <!--<item name="android:windowCloseOnTouchOutside">false</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/anim_in_top</item>-->
+        <!--<item name="colorPrimary">@color/app_color</item>-->
+        <!--<item name="colorPrimaryDark">@color/app_color</item>-->
+        <!--<item name="colorAccent">@color/app_color</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="EditText">
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
+
+

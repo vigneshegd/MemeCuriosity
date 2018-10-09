@@ -1,0 +1,121 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <!-- Text Size -->
+    <dimen name="text8">19.20sp</dimen>
+    <dimen name="text9">21.60sp</dimen>
+    <dimen name="text10">24.00sp</dimen>
+    <dimen name="text11">26.40sp</dimen>
+    <dimen name="text12">28.80sp</dimen>
+    <dimen name="text13">31.20sp</dimen>
+    <dimen name="text14">33.60sp</dimen>
+    <dimen name="text15">36.00sp</dimen>
+    <dimen name="text16">38.40sp</dimen>
+    <dimen name="text17">40.80sp</dimen>
+    <dimen name="text18">43.20sp</dimen>
+    <dimen name="text19">45.60sp</dimen>
+    <dimen name="text20">48.00sp</dimen>
+    <dimen name="text21">50.40sp</dimen>
+    <dimen name="text22">52.80sp</dimen>
+    <dimen name="text23">55.20sp</dimen>
+    <dimen name="text24">57.60sp</dimen>
+    <dimen name="text25">60.00sp</dimen>
+    <dimen name="text26">62.40sp</dimen>
+    <dimen name="text27">64.80sp</dimen>
+    <dimen name="text28">67.20sp</dimen>
+    <dimen name="text29">69.60sp</dimen>
+    <dimen name="text30">72.00sp</dimen>
+    <dimen name="text31">74.40sp</dimen>
+    <dimen name="text32">76.80sp</dimen>
+
+
+
+
+
+    <!-- size -->
+    <dimen name="size0.5">1.05dp</dimen>
+    <dimen name="size1">2.50dp</dimen>
+    <dimen name="size2">5.00dp</dimen>
+    <dimen name="size3">7.50dp</dimen>
+    <dimen name="size4">10.00dp</dimen>
+    <dimen name="size5">12.50dp</dimen>
+    <dimen name="size6">15.00dp</dimen>
+    <dimen name="size7">17.50dp</dimen>
+    <dimen name="size8">20.00dp</dimen>
+    <dimen name="size9">22.50dp</dimen>
+    <dimen name="size10">25.00dp</dimen>
+    <dimen name="size11">27.50dp</dimen>
+    <dimen name="size12">30.00dp</dimen>
+    <dimen name="size13">32.50dp</dimen>
+    <dimen name="size14">35.00dp</dimen>
+    <dimen name="size15">37.50dp</dimen>
+    <dimen name="size16">40.00dp</dimen>
+    <dimen name="size17">42.50dp</dimen>
+    <dimen name="size18">45.00dp</dimen>
+    <dimen name="size19">47.50dp</dimen>
+    <dimen name="size20">50.00dp</dimen>
+    <dimen name="size23">57.50dp</dimen>
+    <dimen name="size25">62.50dp</dimen>
+    <dimen name="size27">67.50dp</dimen>
+    <dimen name="size30">75.00dp</dimen>
+    <dimen name="size33">82.50dp</dimen>
+    <dimen name="size35">87.50dp</dimen>
+    <dimen name="size37">92.50dp</dimen>
+    <dimen name="size40">100.00dp</dimen>
+    <dimen name="size45">112.50dp</dimen>
+    <dimen name="size50">125.00dp</dimen>
+    <dimen name="size55">137.50dp</dimen>
+    <dimen name="size60">150.00dp</dimen>
+    <dimen name="size65">162.50dp</dimen>
+    <dimen name="size70">175.00dp</dimen>
+    <dimen name="size75">187.50dp</dimen>
+    <dimen name="size80">200.00dp</dimen>
+    <dimen name="size85">212.50dp</dimen>
+    <dimen name="size90">225.00dp</dimen>
+    <dimen name="size95">237.50dp</dimen>
+    <dimen name="size100">250.00dp</dimen>
+    <dimen name="size105">262.50dp</dimen>
+    <dimen name="size110">275.00dp</dimen>
+    <dimen name="size115">287.50dp</dimen>
+    <dimen name="size120">300.00dp</dimen>
+    <dimen name="size125">312.50dp</dimen>
+    <dimen name="size130">325.00dp</dimen>
+    <dimen name="size135">337.50dp</dimen>
+    <dimen name="size140">350.00dp</dimen>
+    <dimen name="size145">362.50dp</dimen>
+    <dimen name="size150">375.00dp</dimen>
+    <dimen name="size155">387.50dp</dimen>
+    <dimen name="size160">400.00dp</dimen>
+    <dimen name="size165">412.50dp</dimen>
+    <dimen name="size170">425.00dp</dimen>
+    <dimen name="size175">437.50dp</dimen>
+    <dimen name="size180">450.00dp</dimen>
+    <dimen name="size185">462.50dp</dimen>
+    <dimen name="size190">475.00dp</dimen>
+    <dimen name="size195">487.50dp</dimen>
+    <dimen name="size200">500.00dp</dimen>
+    <dimen name="size210">525.00dp</dimen>
+    <dimen name="size220">550.00dp</dimen>
+    <dimen name="size230">575.00dp</dimen>
+    <dimen name="size240">600.00dp</dimen>
+    <dimen name="size250">625.00dp</dimen>
+    <dimen name="size260">650.00dp</dimen>
+    <dimen name="size270">675.00dp</dimen>
+    <dimen name="size280">700.00dp</dimen>
+    <dimen name="size290">725.00dp</dimen>
+    <dimen name="size300">750.00dp</dimen>
+    <dimen name="size310">775.00dp</dimen>
+    <dimen name="size320">800.00dp</dimen>
+    <dimen name="size330">825.00dp</dimen>
+    <dimen name="size340">850.00dp</dimen>
+    <dimen name="size350">875.00dp</dimen>
+    <dimen name="size360">900.00dp</dimen>
+    <dimen name="size370">925.00dp</dimen>
+    <dimen name="size380">950.00dp</dimen>
+    <dimen name="size390">975.00dp</dimen>
+    <dimen name="size400">1000.00dp</dimen>
+
+
+</resources>

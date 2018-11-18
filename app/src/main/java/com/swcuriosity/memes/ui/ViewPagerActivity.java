@@ -331,10 +331,16 @@ public class ViewPagerActivity extends BaseActivity {
     }
 
     private void answerPopup(String answer) {
-                if(answer.isEmpty()){
-                    DialogManager.showAnswerPopup(this,answer);
-                }else{
-                    DialogManager.showMsgPopup(this,"Answer not available");
+                if(answer!=null){
+                    if(!answer.isEmpty()){
+                        DialogManager.showAnswerPopup(this,answer);
+                    }else {
+                        DialogManager.showToast(this,"Answer not available");
+
+                    }
+                }
+               else{
+                    DialogManager.showToast(this,"Answer not available");
                 }
 
     }

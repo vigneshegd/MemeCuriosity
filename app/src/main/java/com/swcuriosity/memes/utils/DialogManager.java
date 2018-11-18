@@ -169,7 +169,6 @@ public class DialogManager extends BaseActivity {
     }
     public static void showAnswerPopup(final Context mContext, final String msg) {
         mDialog = getDialog(mContext, R.layout.popup_answer_layout);
-
         Button m_btnOk = (Button) mDialog.findViewById(R.id.submitbutton);
         TextView manswer = (TextView) mDialog.findViewById(R.id.msg_txt);
         TextView mTitte = (TextView) mDialog.findViewById(R.id.titletextview);

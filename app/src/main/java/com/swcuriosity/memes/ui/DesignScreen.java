@@ -2053,6 +2053,7 @@ public class DesignScreen extends BaseActivity implements TextEditorDialogFragme
 
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View addTextPopupWindowRootView = inflater.inflate(R.layout.popup_border_padding, null);
+        pop.setOutsideTouchable(false);
         SeekBar seekBar1 = (SeekBar) addTextPopupWindowRootView.findViewById(R.id.seekBar1);
         SeekBar seekBar2 = (SeekBar) addTextPopupWindowRootView.findViewById(R.id.seekBar2);
 
@@ -2080,6 +2081,13 @@ public class DesignScreen extends BaseActivity implements TextEditorDialogFragme
         pop.setFocusable(true);
         pop.setBackgroundDrawable(null);
         pop.showAtLocation(addTextPopupWindowRootView, Gravity.TOP, 0, 0);
+        pop.setOnDismissListener(new PopupWindow.OnDismissListener() {
+            @Override
+            public void onDismiss() {
+                dimenImageView.setPadding(0, topPadding, 0, bottomPadding);
+
+            }
+        });
 //        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 //        imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
         SeekBar.OnSeekBarChangeListener yourSeekBarListener = new SeekBar.OnSeekBarChangeListener() {
@@ -2130,13 +2138,13 @@ public class DesignScreen extends BaseActivity implements TextEditorDialogFragme
         addTextDoneTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                pop.dismiss();
 
                 topPadding = currenTopPadding;
                 bottomPadding = currenBottomPadding;
                 dimenImageView.setPadding(0, topPadding, 0, bottomPadding);
 
 
-                pop.dismiss();
 
             }
         });

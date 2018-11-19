@@ -94,7 +94,8 @@ public class ViewPagerActivity extends BaseActivity {
         setContentView(R.layout.view_pager);
         ButterKnife.bind(this);
         // Assign id to RecyclerView.
-
+        progressDialog=new ProgressDialog(this);
+        progressDialog.setMessage(getResources().getString(R.string.loading));
         FacebookSdk.sdkInitialize(getApplicationContext());
 
         setfacebook();
@@ -203,6 +204,24 @@ public class ViewPagerActivity extends BaseActivity {
                 {
 
                     mImgShare.setEnabled(true);
+                }
+            }
+        };
+        m_handler.postDelayed(m_runnable, 2500);
+
+
+    }
+
+    private void disableAns() {
+        mAns.setEnabled(false);
+
+        m_handler = new Handler();
+        m_runnable = new Runnable() {
+            @Override
+            public void run() {
+                {
+
+                    mAns.setEnabled(true);
                 }
             }
         };
@@ -337,7 +356,7 @@ public class ViewPagerActivity extends BaseActivity {
     InterstitialAd mInterstitialAd;
 
     String interstrialID,AdmobID;
-private void googleAd(){
+private void googleAd(final String answer){
     mInterstitialAd = new InterstitialAd(this);
     interstrialID = (String) GlobalMethods.getValueFromPreference(this, GlobalMethods.STRING_PREFERENCE, AppConstants.INTER);
     AdmobID = (String) GlobalMethods.getValueFromPreference(this, GlobalMethods.STRING_PREFERENCE, AppConstants.AD_MOB);
@@ -346,13 +365,41 @@ private void googleAd(){
     // Load ads into Interstitial Ads
     mInterstitialAd.loadAd(adRequest);
 
+
     mInterstitialAd.setAdListener(new AdListener() {
+        @Override
         public void onAdLoaded() {
+            progressDialog.dismiss();
             showInterstitial();
+            DialogManager.showAnswerPopup(ViewPagerActivity.this,answer);
+
+        }
+
+        @Override
+        public void onAdClosed() {
+
+        }
+
+        @Override
+        public void onAdFailedToLoad(int errorCode) {
+//                    Log.d("_errorCode",errorCode+"");
+//                DialogManager.showToast(CategoryActivity.this,errorCode+"");
+//            adContainer.setVisibility(View.GONE);
+            progressDialog.dismiss();
+            DialogManager.showAnswerPopup(ViewPagerActivity.this,answer);
+
+        }
+
+        @Override
+        public void onAdLeftApplication() {
+        }
+
+        @Override
+        public void onAdOpened() {
         }
     });
 
-}
+ }
     private void showInterstitial() {
         if (mInterstitialAd.isLoaded()) {
             mInterstitialAd.show();
@@ -361,8 +408,8 @@ private void googleAd(){
         private void answerPopup(String answer) {
                 if(answer!=null){
                     if(!answer.isEmpty()){
-                        googleAd();
-                        DialogManager.showAnswerPopup(this,answer);
+                        progressDialog.show();
+                        googleAd(answer);
                     }else {
                         DialogManager.showToast(this,"Answer not available");
 

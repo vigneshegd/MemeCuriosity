@@ -52,6 +52,7 @@
                 android:id="@+id/add_text_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size100"
+                android:textIsSelectable="true"
 
                 android:layout_below="@+id/add_text_done_tv"
                 android:background="@null"

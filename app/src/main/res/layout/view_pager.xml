@@ -71,6 +71,18 @@
             android:background="@drawable/ripple_effect_android_image"
             android:layout_marginLeft="@dimen/size10"
             android:src="@drawable/ic_save_white_24dp" />
+
+        <TextView
+            android:id="@+id/getAnsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/savebtn"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/size3"
+            android:text="@string/get_answer"
+            android:textColor="@color/black" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

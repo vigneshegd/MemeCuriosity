@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
@@ -58,6 +59,10 @@ public class ViewPagerActivity extends BaseActivity {
     ImageView mEditImg;
     @BindView(R.id.savebtn)
     ImageView mSaveImg;
+
+
+    @BindView(R.id.getAnsbtn)
+    TextView mAns;
 
     // Creating DatabaseReference.
     DatabaseReference databaseReference;
@@ -98,6 +103,10 @@ public class ViewPagerActivity extends BaseActivity {
         if(AppConstants.EDITABLE!=null){
             if(AppConstants.EDITABLE.equalsIgnoreCase("0")){
 //                mEditImg.setVisibility(View.GONE);
+            }else if(AppConstants.EDITABLE.equalsIgnoreCase("2")) {
+                mAns.setVisibility(View.VISIBLE);
+            }else {
+                mAns.setVisibility(View.GONE);
             }
         }
         mEditImg.setVisibility(View.VISIBLE);
@@ -135,7 +144,7 @@ public class ViewPagerActivity extends BaseActivity {
         }
     }
 
-    @OnClick({R.id.savebtn, R.id.edit_photo, R.id.img_share,R.id.fb_share})
+    @OnClick({R.id.savebtn, R.id.edit_photo, R.id.img_share,R.id.fb_share,R.id.getAnsbtn})
     public void onClick(View v) {
         switch (v.getId()) {
 
@@ -155,6 +164,8 @@ public class ViewPagerActivity extends BaseActivity {
             case R.id.fb_share:
                 getCurrentImage(4);
                 break;
+            case R.id.getAnsbtn:
+                getCurrentImage(5);
 
         }
     }
@@ -299,6 +310,17 @@ public class ViewPagerActivity extends BaseActivity {
             }
 
         }
+        else  if(flag==5){
+            if (isNetworkAvailable()) {
+                
+                answerPopup(MainImageDownloadList.get(AppConstants.CURRENT_POS).getImageName());
+            }
+            else {
+                DialogManager.showToast(this,getResources().getString(R.string.no_internet));
+
+            }
+
+        }
         }else{
             DialogManager.showToast(this,getResources().getString(R.string.please_wait));
 
@@ -307,7 +329,17 @@ public class ViewPagerActivity extends BaseActivity {
         ;
 
     }
-GlideDrawable imageGlide;
+
+    private void answerPopup(String answer) {
+                if(answer.isEmpty()){
+                    DialogManager.showAnswerPopup(this,answer);
+                }else{
+                    DialogManager.showMsgPopup(this,"Answer not available");
+                }
+
+    }
+
+    GlideDrawable imageGlide;
     ProgressBar progressBar;
     ImageView currentImage;
     public class CustomPagerAdapter extends PagerAdapter {

@@ -1,0 +1,93 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_lay"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/size20"
+            android:background="@drawable/btn_background"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/titletextview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                android:background="@color/app_color"
+                android:padding="@dimen/size5"
+                android:textSize="@dimen/size15"
+                android:layout_alignParentTop="true"
+                android:textAllCaps="false"
+                android:layout_margin="@dimen/size3"
+                android:text="@string/app_name"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+            <LinearLayout
+                android:id="@+id/spinner_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/size5"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msg_txt"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/size12"
+                    android:textColor="@color/white"
+                    android:text="@string/app_name"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size1"
+                android:background="@color/app_color"/>
+            <LinearLayout
+                android:id="@+id/submit_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/submitbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size27"
+                    android:layout_margin="@dimen/size10"
+                    android:textAllCaps="false"
+                    android:background="@drawable/resource_bg_ok"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/size12"
+                    android:text="@string/ok"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cancel_btn"
+            android:layout_width="@dimen/size30"
+            android:layout_height="@dimen/size30"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/size10"
+            android:layout_marginRight="@dimen/size10"
+            android:visibility="gone"
+            android:src="@drawable/close_icon"/>
+    </RelativeLayout>
+
+</RelativeLayout>

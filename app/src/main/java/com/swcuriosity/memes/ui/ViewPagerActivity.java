@@ -29,6 +29,9 @@ import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.facebook.FacebookSdk;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.swcuriosity.memes.R;
@@ -36,6 +39,7 @@ import com.swcuriosity.memes.firebase.FirebaseApiCall;
 import com.swcuriosity.memes.main.BaseActivity;
 import com.swcuriosity.memes.utils.AppConstants;
 import com.swcuriosity.memes.utils.DialogManager;
+import com.swcuriosity.memes.utils.GlobalMethods;
 import com.swcuriosity.memes.viewmodel.ImageUploadInfo;
 
 import java.util.ArrayList;
@@ -102,6 +106,7 @@ public class ViewPagerActivity extends BaseActivity {
 
         if(AppConstants.EDITABLE!=null){
             if(AppConstants.EDITABLE.equalsIgnoreCase("0")){
+                mAns.setVisibility(View.GONE);
 //                mEditImg.setVisibility(View.GONE);
             }else if(AppConstants.EDITABLE.equalsIgnoreCase("2")) {
                 mAns.setVisibility(View.VISIBLE);
@@ -329,12 +334,42 @@ public class ViewPagerActivity extends BaseActivity {
         ;
 
     }
+    InterstitialAd mInterstitialAd;
 
-    private void answerPopup(String answer) {
-                if(answer.isEmpty()){
-                    DialogManager.showAnswerPopup(this,answer);
-                }else{
-                    DialogManager.showMsgPopup(this,"Answer not available");
+    String interstrialID,AdmobID;
+private void googleAd(){
+    mInterstitialAd = new InterstitialAd(this);
+    interstrialID = (String) GlobalMethods.getValueFromPreference(this, GlobalMethods.STRING_PREFERENCE, AppConstants.INTER);
+    AdmobID = (String) GlobalMethods.getValueFromPreference(this, GlobalMethods.STRING_PREFERENCE, AppConstants.AD_MOB);
+    mInterstitialAd.setAdUnitId(interstrialID);
+    AdRequest adRequest = new AdRequest.Builder().build();
+    // Load ads into Interstitial Ads
+    mInterstitialAd.loadAd(adRequest);
+
+    mInterstitialAd.setAdListener(new AdListener() {
+        public void onAdLoaded() {
+            showInterstitial();
+        }
+    });
+
+}
+    private void showInterstitial() {
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
+    }
+        private void answerPopup(String answer) {
+                if(answer!=null){
+                    if(!answer.isEmpty()){
+                        googleAd();
+                        DialogManager.showAnswerPopup(this,answer);
+                    }else {
+                        DialogManager.showToast(this,"Answer not available");
+
+                    }
+                }
+               else{
+                    DialogManager.showToast(this,"Answer not available");
                 }
 
     }

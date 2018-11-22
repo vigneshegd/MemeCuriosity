@@ -266,6 +266,8 @@ public class MemeTemplates extends BaseActivity {
 
             if ((AppConstants.EDITABLE != null) && (AppConstants.EDITABLE.equalsIgnoreCase("0"))) {
                 mTxtTitle.setText(AppConstants.CategoryName);
+            }else if ((AppConstants.EDITABLE != null) && (AppConstants.EDITABLE.equalsIgnoreCase("2"))) {
+                mTxtTitle.setText(AppConstants.CategoryName);
             } else {
                 mTxtTitle.setText(AppConstants.CategoryName + " " + getResources().getString(R.string.templates));
 

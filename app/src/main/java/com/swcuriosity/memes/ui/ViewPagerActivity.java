@@ -95,6 +95,8 @@ public class ViewPagerActivity extends BaseActivity {
         ButterKnife.bind(this);
         // Assign id to RecyclerView.
         progressDialog=new ProgressDialog(this);
+        progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.setCancelable(false);
         progressDialog.setMessage(getResources().getString(R.string.loading));
         FacebookSdk.sdkInitialize(getApplicationContext());
 
@@ -172,6 +174,7 @@ public class ViewPagerActivity extends BaseActivity {
                 break;
             case R.id.getAnsbtn:
                 getCurrentImage(5);
+                disableAns();
 
         }
     }
@@ -355,7 +358,7 @@ public class ViewPagerActivity extends BaseActivity {
     }
     InterstitialAd mInterstitialAd;
 
-    String interstrialID,AdmobID;
+    String interstrialID="",AdmobID="";
 private void googleAd(final String answer){
     mInterstitialAd = new InterstitialAd(this);
     interstrialID = (String) GlobalMethods.getValueFromPreference(this, GlobalMethods.STRING_PREFERENCE, AppConstants.INTER);

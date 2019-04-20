@@ -7,7 +7,7 @@ android {
             keyAlias 'memescuriosity'
             keyPassword 'memes2139'
             storePassword 'meme2139'
-            storeFile file('D:/android/Project_folder/MemeCuriosity/MemeCuriosity/app/memescuriosity.jks')
+            storeFile file('H:/Project/Memes App/MemeCuriosity/app/memescuriosity.jks')
         }
     }
     compileSdkVersion 27
